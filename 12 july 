@@ -1,0 +1,521 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNuQqtq4bvnzkxGS/5SeGyr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shivrj34/shiv/blob/main/12%20july%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LXrb0VXr0-yw",
+        "outputId": "b5790cfa-f4e9-4ff3-a20f-2ab3211ca4c7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "\n",
+            "\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "# function\n",
+        "# block of code => task / functionaality\n",
+        "for i in range(0,4):\n",
+        "    print(\"\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def main():{\n",
+        "    statement\n",
+        "}\n",
+        "...\n",
+        "def msg():\n",
+        "  print(\"hello user\")"
+      ],
+      "metadata": {
+        "id": "BOQkwHvY1gSN"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def msg():\n",
+        "  print(\"hello user\")"
+      ],
+      "metadata": {
+        "id": "aqUiM8vS2WOC"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "msg()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J6Hre5nf2aTf",
+        "outputId": "6f793016-c172-4169-daa6-0df304c0d614"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello user\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "msg()\n",
+        "msg()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ch2CXpBB17lc",
+        "outputId": "fcf53e48-74a3-4fba-dc3e-e1776fd93539"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello user\n",
+            "hello user\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def msg(x):\n",
+        "  print(\"hello user\",x)"
+      ],
+      "metadata": {
+        "id": "Rgyk9u_z2swK"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#value => argument\n",
+        "msg(\"shiv\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u-im_jbT25Vd",
+        "outputId": "7ef5cc5e-8fb5-4449-98fb-7fec422395fa"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello user shiv\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sumfunction(x,y):\n",
+        "  print(x+y)\n",
+        "\n",
+        "sumfunction(10,20)\n",
+        "sumfunction(15,55)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ovhYrmIZ3ggu",
+        "outputId": "2036bc5d-759f-4389-f831-0356e3b342cd"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "70\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func(x2):\n",
+        "  x2=10000\n",
+        "  print(\"inside function X2:\",x2)\n",
+        "\n",
+        "#outside  => global variable\n",
+        "x2=121\n",
+        "func(x2)\n",
+        "print(\"outside\",x2)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tH3SxBZt4CZp",
+        "outputId": "6fa8cdec-3612-48b1-abb5-a6674be70d15"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "inside function X2: 10000\n",
+            "outside 121\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "new memory immutable data type"
+      ],
+      "metadata": {
+        "id": "26gHTlKZ5p0f"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def func(x):\n",
+        "  print(\"inside\",x , id(x))\n",
+        "  x=10\n",
+        "  print(\"change inside\",x , id(x))\n",
+        "  x=20\n",
+        "\n",
+        "#.............\n",
+        "x1=10\n",
+        "print(\"outside\",x , id(x))\n",
+        "func(x1)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        },
+        "id": "eyTtTbMy6690",
+        "outputId": "bbf0e93e-441d-435c-abec-20d8d6e68f41"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'x' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-25-929a49be5473>\u001b[0m in \u001b[0;36m<cell line: 9>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      7\u001b[0m \u001b[0;31m#.............\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0mx1\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 9\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"outside\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mx\u001b[0m \u001b[0;34m,\u001b[0m \u001b[0mid\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     10\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     11\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'x' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def employee(eid,ename):\n",
+        "  print(f\"eid:{eid} ename:{ename}\")\n",
+        "\n",
+        "# required argument\n",
+        "employee(10,\"shiv\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pFBSL8Gy8H5g",
+        "outputId": "c5677d0e-144d-4b53-ecc6-00179715f764"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "eid:10 ename:shiv\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def employee(eid,ename):\n",
+        "  print(f\"eid:{eid} ename:{ename}\")\n",
+        "\n",
+        "# position argument\n",
+        "employee(\"shiv\",10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vAfVdBH08ybV",
+        "outputId": "b6558f89-7a9f-4221-c92a-1aa54e85cdac"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "eid:shiv ename:10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def employee(eid,ename):\n",
+        "  print(f\"eid:{eid} ename:{ename}\")\n",
+        "\n",
+        "\n",
+        "# keyword argument\n",
+        "employee(ename=\"shiv\",eid=10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m34Y9x7V9JS4",
+        "outputId": "1e7ab19b-b77b-4884-a9c2-47efd4d7ae36"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "eid:10 ename:shiv\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# variable length argument\n",
+        "def employee(*system):\n",
+        "  print(system, type(system))\n",
+        "employee(10,20,30)\n",
+        "employee()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PhmqveRd9ipi",
+        "outputId": "254e9d9d-1ce8-4a6b-f494-fd0d7639da91"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(10, 20, 30) <class 'tuple'>\n",
+            "() <class 'tuple'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# lambda function\n",
+        "# annymous function\n",
+        "def square(x):\n",
+        "  print(x*X)"
+      ],
+      "metadata": {
+        "id": "YSAuT3Rd-lML"
+      },
+      "execution_count": 37,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# lambda parameter : expression\n",
+        "shiv = lambda x:x*x\n",
+        "shiv(10)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VHrOgCau-2x6",
+        "outputId": "b06fd4d7-8cb4-495b-a262-436c3e2bbf89"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "100"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# map , filter\n",
+        "def square(num):\n",
+        "  return num**2\n",
+        "\n",
+        "square(9)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X4OBsRMR_jeV",
+        "outputId": "dfcc8cd0-9288-4647-9a2b-6f76047735c9"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "81"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 40
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#map , filter\n",
+        "def square(num):\n",
+        "  return num**2\n",
+        "\n",
+        "mylist=[10,20,30,40]\n",
+        "list(map( square ,mylist ))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZTfmqfZx_68s",
+        "outputId": "ca9b2856-7023-4d90-9785-898b50eaceb9"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[100, 400, 900, 1600]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(map( lambda num: num**2 ,mylist ))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U52joaNgBB5Z",
+        "outputId": "1d44e364-a13f-4df1-b172-6f0e4fd4d31b"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[100, 400, 900, 1600]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 44
+        }
+      ]
+    }
+  ]
+}
