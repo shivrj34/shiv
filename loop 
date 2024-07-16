@@ -1,0 +1,304 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shivrj34/shiv/blob/main/loop%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NRJmQG7C-gwY",
+        "outputId": "1608c140-a3d3-4f32-9391-71ed4eaafefd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "before a = 10 b = 20\n",
+            "(20, 10)\n"
+          ]
+        }
+      ],
+      "source": [
+        "#swap two numbers\n",
+        "def swap(a,b):\n",
+        "    a,b=b,a\n",
+        "    return a,b\n",
+        "\n",
+        "a=10\n",
+        "b=20\n",
+        "print(\"before a =\",a, \"b =\",b )\n",
+        "print(swap(a,b))\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# extract each digit from an integer in the reverse order\n",
+        "def num (n):\n",
+        "  return [int(i) for i in str(n)[::-1]]\n",
+        "\n",
+        "n=2004\n",
+        "print(num(n))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eBCS095lGD4K",
+        "outputId": "8ddfdc21-30bb-411e-ea73-9d7c94180771"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4, 0, 0, 2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# sum of 3 digit\n",
+        "def sum (a,b,c):\n",
+        "  return a+b+c\n",
+        "a=10\n",
+        "b=20\n",
+        "c=30\n",
+        "print(sum(a,b,c))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9WrOJUl4yTYg",
+        "outputId": "91b7673c-3a03-48fe-e9e5-ad0115b2339d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#sum of square of given numbers\n",
+        "def sum(a,b,c):\n",
+        "  return a**2+b**2+c**2\n",
+        "a=10\n",
+        "b=20\n",
+        "c=30\n",
+        "print(sum(a,b,c))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TddRcyF6zS3T",
+        "outputId": "3f3264db-d0e2-452f-9fb3-ed40e783a4a5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1400\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Findout the the given value is armstrong number or not\n",
+        "def armstrong(n):\n",
+        "    num = str(n)\n",
+        "    num_digit = len(num)\n",
+        "    sum_of_digits = 0\n",
+        "    for digit in num:\n",
+        "       sum_of_digits += (int(digit) ** num_digit)\n",
+        "    return sum_of_digits == n\n",
+        "\n",
+        "n = int(input(\"Enter a number: \"))\n",
+        "if armstrong(n):\n",
+        "    print(f\"{n} is an Armstrong number.\")\n",
+        "else:\n",
+        "    print(f\"{n} is not an Armstrong number.\")\n"
+      ],
+      "metadata": {
+        "id": "LyTGlGOn14XQ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6d79428e-8112-4acb-aab0-15aac99abf68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 153\n",
+            "153 is an Armstrong number.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#float number with 2 decimal places using print()\n",
+        "n = float(input(\"Enter a number:\"))\n",
+        "print(f\"{n:.2f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n3etaVdZSPK9",
+        "outputId": "fcf5969e-528d-475a-b7cc-94571a6e4003"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number:12.4563\n",
+            "12.46\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#all factors of a given number provided by the user.\n",
+        "def num(n):\n",
+        "  result = []\n",
+        "  for i in range (1,n+1):\n",
+        "    if n%i==0:\n",
+        "      result.append(i)\n",
+        "  return result\n",
+        "n=int(input(\"Enter a number:\"))\n",
+        "print(num(n))"
+      ],
+      "metadata": {
+        "id": "PpllKzsZaPGp",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3ae648b1-3c99-4c23-bb68-1d701f4e95c9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number:132\n",
+            "[1, 2, 3, 4, 6, 11, 12, 22, 33, 44, 66, 132]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Accept a list of 5 float numbers as an input from the user\n",
+        "def num(n):\n",
+        "  num_str=len(n)\n",
+        "  num_list=[]\n",
+        "  for i in n:\n",
+        "    num_list.append(i)\n",
+        "  return num_list\n",
+        "n=12.5,13.5,14.5,15.5,16.5\n",
+        "print(num(n))"
+      ],
+      "metadata": {
+        "id": "1NBqCkjRLQ49",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "01a4543c-78c9-4fdf-86c9-eea66b2e7998"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12.5, 13.5, 14.5, 15.5, 16.5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#find the volume of the cylinder. Also find the cost when ,when the\n",
+        "#cost of 1litre milk is 40Rs.\n",
+        "def volume(r,h):\n",
+        "  c=40\n",
+        "  v=(22/7)*r*r*h*c\n",
+        "  return v\n",
+        "r=10\n",
+        "h=20\n",
+        "print(volume(r,h),\"Rs\")\n"
+      ],
+      "metadata": {
+        "id": "oSmumo8mUsmB",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "60316f5d-5808-45d6-ac2d-7a3898e1ccc6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "251428.57142857142 Rs\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
